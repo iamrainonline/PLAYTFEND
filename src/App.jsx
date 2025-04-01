@@ -4,14 +4,20 @@ import Footer from "./components/Footer/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // Pages
 import Mainpage from "./pages/Mainpage";
-import Runs from "./pages/Runs";
-import Projects from "./pages/Projects";
+
+// Tabs
+import Cats from "./components/Tabs/Cats";
+import Dogs from "./components/Tabs/Dogs";
+import Fish from "./components/Tabs/Fish";
+import Bird from "./components/Tabs/Bird";
 
 const Layout = ({ isOpen, setIsOpen }) => (
   <>
     <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
     <div
-      className={`transition-all duration-300 ${isOpen ? "ml-64" : "ml-20"}`}
+      className={`transition-all duration-300 ${
+        isOpen ? "ml-[500px]" : "ml-20"
+      }`}
     >
       <Outlet />
     </div>
@@ -30,12 +36,20 @@ const router = (isOpen, setIsOpen) =>
           element: <Mainpage />,
         },
         {
-          path: "/runs",
-          element: <Runs />,
+          path: "/cats",
+          element: <Cats />,
         },
         {
-          path: "/projects",
-          element: <Projects />,
+          path: "/dogs",
+          element: <Dogs />,
+        },
+        {
+          path: "/fish",
+          element: <Fish />,
+        },
+        {
+          path: "/birds",
+          element: <Bird />,
         },
       ],
     },
