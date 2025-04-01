@@ -97,7 +97,7 @@ const PetShopNavbar = ({ isOpen, setIsOpen }) => {
           <span
             className={`ml-3 text-gray-600 cursor-pointer ${
               isOpen ? "" : "mx-auto"
-            } hover:bg-gray-100 p-2 rounded-full transition-colors`}
+            } hover:bg-gray-100  rounded-full transition-colors`}
           >
             {isOpen ? (
               <ArrowLeftFromLine size={22} />

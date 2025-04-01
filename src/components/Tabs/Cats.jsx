@@ -64,10 +64,6 @@ const Cats = () => {
       options: ["Sub 50 Lei", "50-100 Lei", "100-200 Lei", "Peste 200 Lei"],
     },
     {
-      name: "Vârstă",
-      options: ["Pui", "Adult", "Senior"],
-    },
-    {
       name: "Rating",
       options: ["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐"],
     },
